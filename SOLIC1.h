@@ -23,8 +23,8 @@ public:
     bool IsReloading;
     bool IsEquipping;
 
-    void checkDead();
-    void HandleDeath();
+    void checkDead();                       // Mover ambos a otro componente que gestione la vida
+    void HandleDeath();                     //
     void FireWeapon_Server(FVector dir);
 
 protected:
@@ -46,6 +46,12 @@ class APlayerCharacter : public ACharacter
     GENERATED_BODY()
 
 public:
+
+    /*
+    
+            MOVER EN GENERAL CADA ZONA SEPARADA DE COMENTARIOS A UN COMPONENTE PROPIO
+
+    */
 
     // Gestión de vida
     UPROPERTY(VisibleInstanceOnly, Category="State")
