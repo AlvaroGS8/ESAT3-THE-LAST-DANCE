@@ -23,8 +23,9 @@ public:
     bool IsReloading;
     bool IsEquipping;
 
-    void checkDead();                       // Mover ambos a otro componente que gestione la vida
-    void HandleDeath();                     //
+    void checkDead();                       // Mover ambos a otro componente que gestione la muerte.
+    void HandleDeath();                     // El arma no tiene la responsabilidad de la muerte, solo de disparar.
+
     void FireWeapon_Server(FVector dir);
 
 protected:
@@ -47,29 +48,23 @@ class APlayerCharacter : public ACharacter
 
 public:
 
-    /*
-    
-            MOVER EN GENERAL CADA ZONA SEPARADA DE COMENTARIOS A UN COMPONENTE PROPIO
+    // Gestión de vida 
+    UPROPERTY(VisibleInstanceOnly, Category="State")    //  
+    float CurrentHealth;                                //  Mover a un componente que gestione la vida del jugador.
+                                                        //
+    void TakeDmg(float dmg);                            //
 
-    */
+    // Gestión de inventario                            // 
+    UPROPERTY()                                         //
+    TArray<AActor*> items;                              //  Mover a un componente que gestione el inventario del jugador
+                                                        //
+    void AddItem(AActor* newItem);                      //
 
-    // Gestión de vida
-    UPROPERTY(VisibleInstanceOnly, Category="State")
-    float CurrentHealth;
+    //Gestión de diálogo                                //  La función podría estar dentro de un componente 'Interact' del jugador
+    void StartDialog(AActor* npc);                      //
 
-    void TakeDmg(float dmg);
-
-    // Gestión de inventario
-    UPROPERTY()
-    TArray<AActor*> items;
-
-    void AddItem(AActor* newItem);
-
-    //Gestión de diálogo
-    void StartDialog(AActor* npc);
-
-    //Gestión de puntuación
-    void AddPoints(int 32 pts);
+    //Gestión de puntuación                             //  La función podría estar dentro de un componente que gestione los puntos del jugador.
+    void AddPoints(int 32 pts);                         //
 
     UPROPERTY(EditDefaultOnly, Category="Combat")
     float BaseDamage = 25.f;
@@ -88,6 +83,10 @@ private:
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+// Es mejor que el ScoreManager conecte con el character y el haga de enlace entre ScoreManager y HUD.
 
 UCLASS()
 class UScoreManager : public UGameInstanceSubsystem
