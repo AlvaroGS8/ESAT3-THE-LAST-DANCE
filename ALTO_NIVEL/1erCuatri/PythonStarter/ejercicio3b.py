@@ -1,0 +1,18 @@
+def pasarAMinusculas(lalista):
+
+    for i in range(len(lalista)):
+        lalista[i] = lalista[i].lower()
+
+def pasarAMayusculas(lalista):
+    
+    for i in range(len(lalista)):
+        lalista[i] = lalista[i].upper()
+
+cadena = ["mHasuJsakSaASJajSAS", "jaJSNAASHiajsDKlaskjHAS", "lEtRa"]
+
+
+pasarAMinusculas(cadena)
+print(cadena)
+
+pasarAMayusculas(cadena)
+print(cadena)
