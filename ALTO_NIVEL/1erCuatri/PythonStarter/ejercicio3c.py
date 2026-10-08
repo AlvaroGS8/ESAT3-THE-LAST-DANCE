@@ -1,4 +1,4 @@
-def DiccionarioNuevo(diccionario, maxCaracteres = 5):
+def DiccionarioNuevo(diccionario : dict, maxCaracteres: int = 5) -> dict:
     nuevoDiccionario = {}
     for clave, valor in diccionario.items():
         if len(clave) <= maxCaracteres:

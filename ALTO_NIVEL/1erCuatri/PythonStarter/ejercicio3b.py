@@ -1,9 +1,9 @@
-def pasarAMinusculas(lalista):
+def pasarAMinusculas(lalista: list) -> list:
 
     for i in range(len(lalista)):
         lalista[i] = lalista[i].lower()
 
-def pasarAMayusculas(lalista):
+def pasarAMayusculas(lalista: list) -> list:
     
     for i in range(len(lalista)):
         lalista[i] = lalista[i].upper()
