@@ -1,13 +1,13 @@
-def listToDictionary (list1, list2):
-    if len(list1) == len(list2):
-        dictionary = {}
-        for num in range(len(list1)):
-            dictionary[list1[num]] = list2[num]
-        return dictionary
-    return "none"
+import random
 
-unalista = [1,2,3,4,5]
-otralista = ["coche", "casa", "perro", "dinero", "pareja"]
+lista_tlf = ["674725341"]
 
-print(listToDictionary(unalista, otralista))
+for i in range(4):
+  tmp = str((random.randint(600000000, 700000000)))
 
+
+a = input("Introduzca uno de los numeros de telefono de la lista para cerrar el programa\n")
+while a not in lista_tlf:
+  a = input("\nPrueba otra vez!\n")
+
+print("\nO tienes mucha suerte o te sabes mi numero de telefono")

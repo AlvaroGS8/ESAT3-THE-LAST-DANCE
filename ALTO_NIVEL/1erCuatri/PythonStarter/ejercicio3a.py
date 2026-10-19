@@ -1,8 +1,13 @@
-numlist = [10,42,12,32,42,123,53,63,12,43]
+def funcion(list1: list, list2: list) -> dict:
+    if len(list1) == len(list2):
+        return dict(zip(list1, list2))
+    
+    return None
+   
 
-total = 0
 
-for num in numlist:
-    total += num
+list = [1,2,3,4,5]
+listt = ["cadena", "cadenota", "cadenon", "Puppeteers", "nullptr"]
 
-print("The media is ",total/len(numlist))
+print(funcion(list, listt))
+print(funcion(list2=listt, list1=list))
