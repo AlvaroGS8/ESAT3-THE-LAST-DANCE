@@ -1,0 +1,6 @@
+﻿  board.cc
+  main.cc
+C:\Users\alvar\Documents\ESAT\3ESAT\ESAT3-THE-LAST-DANCE\IA\1erCuatri\3IA_TA_username_25_26\3IA_TA_username\src\main.cc(9,33): warning C4100: 'argv': parámetro sin referencia
+C:\Users\alvar\Documents\ESAT\3ESAT\ESAT3-THE-LAST-DANCE\IA\1erCuatri\3IA_TA_username_25_26\3IA_TA_username\src\main.cc(9,20): warning C4100: 'argc': parámetro sin referencia
+  Generando código...
+  PR0_Base.vcxproj -> C:\Users\alvar\Documents\ESAT\3ESAT\ESAT3-THE-LAST-DANCE\IA\1erCuatri\3IA_TA_username_25_26\3IA_TA_username\bin\Debug\PR0_Base_d.exe

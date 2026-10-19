@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PR0_Base", "PR0_Base\vs2022\PR0_Base.vcxproj", "{11D9416F-FDA5-9C7A-26BF-8A2212EBD108}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Linux_x64 = Debug|Linux_x64
+		Debug|macos_universal = Debug|macos_universal
+		Debug|Win32 = Debug|Win32
+		Debug|Win64 = Debug|Win64
+		Release|Linux_x64 = Release|Linux_x64
+		Release|macos_universal = Release|macos_universal
+		Release|Win32 = Release|Win32
+		Release|Win64 = Release|Win64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11D9416F-FDA5-9C7A-26BF-8A2212EBD108}.Debug|Linux_x64.ActiveCfg = Debug Linux_x64|x64
+		{11D9416F-FDA5-9C7A-26BF-8A2212EBD108}.Debug|Linux_x64.Build.0 = Debug Linux_x64|x64
+		{11D9416F-FDA5-9C7A-26BF-8A2212EBD108}.Debug|macos_universal.ActiveCfg = Debug macos_universal|x86
+		{11D9416F-FDA5-9C7A-26BF-8A2212EBD108}.Debug|macos_universal.Build.0 = Debug macos_universal|x86
+		{11D9416F-FDA5-9C7A-26BF-8A2212EBD108}.Debug|Win32.ActiveCfg = Debug|Win32
+		{11D9416F-FDA5-9C7A-26BF-8A2212EBD108}.Debug|Win32.Build.0 = Debug|Win32
+		{11D9416F-FDA5-9C7A-26BF-8A2212EBD108}.Debug|Win64.ActiveCfg = Debug Win64|x64
+		{11D9416F-FDA5-9C7A-26BF-8A2212EBD108}.Debug|Win64.Build.0 = Debug Win64|x64
+		{11D9416F-FDA5-9C7A-26BF-8A2212EBD108}.Release|Linux_x64.ActiveCfg = Release Linux_x64|x64
+		{11D9416F-FDA5-9C7A-26BF-8A2212EBD108}.Release|Linux_x64.Build.0 = Release Linux_x64|x64
+		{11D9416F-FDA5-9C7A-26BF-8A2212EBD108}.Release|macos_universal.ActiveCfg = Release macos_universal|x86
+		{11D9416F-FDA5-9C7A-26BF-8A2212EBD108}.Release|macos_universal.Build.0 = Release macos_universal|x86
+		{11D9416F-FDA5-9C7A-26BF-8A2212EBD108}.Release|Win32.ActiveCfg = Release|Win32
+		{11D9416F-FDA5-9C7A-26BF-8A2212EBD108}.Release|Win32.Build.0 = Release|Win32
+		{11D9416F-FDA5-9C7A-26BF-8A2212EBD108}.Release|Win64.ActiveCfg = Release Win64|x64
+		{11D9416F-FDA5-9C7A-26BF-8A2212EBD108}.Release|Win64.Build.0 = Release Win64|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

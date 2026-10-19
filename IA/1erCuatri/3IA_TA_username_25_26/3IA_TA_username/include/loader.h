@@ -38,6 +38,9 @@ static ErrorCode BoardFromImage(Board* board, const char* filename) {
       }
     }
   }
+
+  return kErrorCode_Ok;
+
 }
 
 #endif

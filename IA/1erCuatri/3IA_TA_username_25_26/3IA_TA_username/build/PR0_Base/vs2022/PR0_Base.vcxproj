@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Win64|Win32">
+      <Configuration>Debug Win64</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Win64|x64">
+      <Configuration>Debug Win64</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Win64|x86">
+      <Configuration>Debug Win64</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Linux_x64|Win32">
+      <Configuration>Debug Linux_x64</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Linux_x64|x64">
+      <Configuration>Debug Linux_x64</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Linux_x64|x86">
+      <Configuration>Debug Linux_x64</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug macos_universal|Win32">
+      <Configuration>Debug macos_universal</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug macos_universal|x64">
+      <Configuration>Debug macos_universal</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug macos_universal|x86">
+      <Configuration>Debug macos_universal</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Win64|Win32">
+      <Configuration>Release Win64</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Win64|x64">
+      <Configuration>Release Win64</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Win64|x86">
+      <Configuration>Release Win64</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Linux_x64|Win32">
+      <Configuration>Release Linux_x64</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Linux_x64|x64">
+      <Configuration>Release Linux_x64</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Linux_x64|x86">
+      <Configuration>Release Linux_x64</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release macos_universal|Win32">
+      <Configuration>Release macos_universal</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release macos_universal|x64">
+      <Configuration>Release macos_universal</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release macos_universal|x86">
+      <Configuration>Release macos_universal</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{11D9416F-FDA5-9C7A-26BF-8A2212EBD108}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>PR0_Base</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Linux_x64|x64'" Label="Globals">
+    <Keyword>Linux</Keyword>
+    <RootNamespace>PR0_Base</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Linux_x64|x64'" Label="Globals">
+    <Keyword>Linux</Keyword>
+    <RootNamespace>PR0_Base</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Win64|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Linux_x64|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug macos_universal|x86'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>ClangCL</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Win64|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Linux_x64|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release macos_universal|x86'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>ClangCL</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug Win64|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug Linux_x64|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug macos_universal|x86'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release Win64|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release Linux_x64|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release macos_universal|x86'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\..\bin\Debug\</OutDir>
+    <IntDir>$(ProjectDir)..\..\Debug\Win32\</IntDir>
+    <TargetName>PR0_Base_d</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Win64|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\..\bin\Debug\</OutDir>
+    <IntDir>$(ProjectDir)..\..\Debug\Win64\</IntDir>
+    <TargetName>PR0_Base_d</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Linux_x64|x64'">
+    <OutDir>$(ProjectDir)..\..\..\bin\Debug\</OutDir>
+    <IntDir>$(ProjectDir)..\..\Debug\Linux_x64\</IntDir>
+    <TargetName>PR0_Base_d</TargetName>
+    <TargetExt>
+    </TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug macos_universal|x86'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\..\bin\Debug\</OutDir>
+    <IntDir>$(ProjectDir)..\..\Debug\macos_universal\</IntDir>
+    <TargetName>PR0_Base_d</TargetName>
+    <TargetExt>
+    </TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\..\bin\Release\</OutDir>
+    <IntDir>$(ProjectDir)..\..\Release\Win32\</IntDir>
+    <TargetName>PR0_Base</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Win64|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\..\bin\Release\</OutDir>
+    <IntDir>$(ProjectDir)..\..\Release\Win64\</IntDir>
+    <TargetName>PR0_Base</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Linux_x64|x64'">
+    <OutDir>$(ProjectDir)..\..\..\bin\Release\</OutDir>
+    <IntDir>$(ProjectDir)..\..\Release\Linux_x64\</IntDir>
+    <TargetName>PR0_Base</TargetName>
+    <TargetExt>
+    </TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release macos_universal|x86'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\..\bin\Release\</OutDir>
+    <IntDir>$(ProjectDir)..\..\Release\macos_universal\</IntDir>
+    <TargetName>PR0_Base</TargetName>
+    <TargetExt>
+    </TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>DEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\include\common;..\..\..\deps\esat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;user32.lib;shell32.lib;gdi32.lib;ESAT_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\deps\esat\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Win64|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>DEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\include\common;..\..\..\deps\esat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;user32.lib;shell32.lib;gdi32.lib;ESAT_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\deps\esat\bin\win_x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Linux_x64|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\include\common;..\..\..\deps\esat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>Minimal</DebugInformationFormat>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <AdditionalOptions>-m64 %(AdditionalOptions)</AdditionalOptions>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ESAT.lib;asound.lib;dl.lib;pthread.lib;X11.lib;GL.lib;GLU.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\deps\esat\bin\linux64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug macos_universal|x86'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\include\common;..\..\..\deps\esat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <AdditionalOptions>-m64 %(AdditionalOptions)</AdditionalOptions>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>-framework;OpenGL;-framework;Cocoa;-framework;Corevideo;-framework;IOKit;-lESAT;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\deps\esat\bin\macos64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\include\common;..\..\..\deps\esat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;user32.lib;shell32.lib;gdi32.lib;ESAT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\deps\esat\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Win64|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\include\common;..\..\..\deps\esat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;user32.lib;shell32.lib;gdi32.lib;ESAT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\deps\esat\bin\win_x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Linux_x64|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\include\common;..\..\..\deps\esat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <AdditionalOptions>-m64 %(AdditionalOptions)</AdditionalOptions>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ESAT.lib;asound.lib;dl.lib;pthread.lib;X11.lib;GL.lib;GLU.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\deps\esat\bin\linux64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release macos_universal|x86'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\include\common;..\..\..\deps\esat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <AdditionalOptions>-m64 %(AdditionalOptions)</AdditionalOptions>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>-framework;OpenGL;-framework;Cocoa;-framework;Corevideo;-framework;IOKit;-lESAT;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\deps\esat\bin\macos64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\agent.h" />
+    <ClInclude Include="..\..\..\include\board.h" />
+    <ClInclude Include="..\..\..\include\common\common_def.h" />
+    <ClInclude Include="..\..\..\include\common\platform_types.h" />
+    <ClInclude Include="..\..\..\include\loader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\board.cc" />
+    <ClCompile Include="..\..\..\src\main.cc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

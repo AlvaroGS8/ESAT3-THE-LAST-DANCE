@@ -8,10 +8,7 @@ void Board::init(int width, int height){
 }
 
 Cell& Board::cell(int row, int col) {
-
-    Cell a;
-
-    return a;
+    return cells_[row * width_ + col];
 }
 
 Board::Board(){
